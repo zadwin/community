@@ -33,6 +33,7 @@ public class HelloController {
             System.out.println("用户集合："+user2.toString());
         }
         if(user1 != null){
+//            相当于给网页注入参数
             model.addAttribute("name",user1.getName());
         }else{
             model.addAttribute("name",name);
