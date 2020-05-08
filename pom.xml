@@ -64,6 +64,18 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!--	okhttp的maven引用	-->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>4.6.0</version>
+		</dependency>
+		<!--	fashjson快速生成json数据的依赖包	-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.68</version>
+		</dependency>
 	</dependencies>
 	<!--	自动生成的	-->
 <!--	<dependencyManagement>-->

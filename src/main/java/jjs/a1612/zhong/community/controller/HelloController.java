@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 
+/**
+ * 测试的代码
+ */
 //这个语句的功能简单理解就是可以允许这个类接收前端的请求，自动扫描当前的类
 @Controller
 public class HelloController {

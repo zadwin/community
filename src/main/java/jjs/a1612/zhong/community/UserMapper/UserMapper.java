@@ -8,6 +8,9 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.ArrayList;
 
+/**
+ * 数据库的访问接口，类似与DAO层
+ */
 @Mapper
 public interface UserMapper {
     //  通过这种方式查询时，方法中传的值不是对象，则sql语句中的参数不能正确匹配，此时则需要通过 @Param("name")声明
