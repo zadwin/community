@@ -1,14 +1,7 @@
 package jjs.a1612.zhong.community.controller;
 
-import jjs.a1612.zhong.community.UserMapper.UserMapper;
-import jjs.a1612.zhong.community.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.ArrayList;
 
 /**
  * 主页的访问申请
