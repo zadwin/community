@@ -1,6 +1,6 @@
 package jjs.a1612.zhong.community.controller;
 
-import jjs.a1612.zhong.community.UserMapper.UserMapper;
+import jjs.a1612.zhong.community.mapper.UserMapper;
 import jjs.a1612.zhong.community.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

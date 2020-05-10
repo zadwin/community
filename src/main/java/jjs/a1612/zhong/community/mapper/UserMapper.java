@@ -1,4 +1,4 @@
-package jjs.a1612.zhong.community.UserMapper;
+package jjs.a1612.zhong.community.mapper;
 
 import jjs.a1612.zhong.community.model.User;
 import org.apache.ibatis.annotations.Insert;
@@ -21,4 +21,6 @@ public interface UserMapper {
     User findById(@Param("id") int id);
     @Select("select * from user where name=#{name}")
     ArrayList<User> findAll(@Param("name") String name);
+    @Select("select * from user where token=#{token}")
+    User findByToken(@Param("token") String token);
 }
