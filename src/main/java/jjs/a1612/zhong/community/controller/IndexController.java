@@ -21,15 +21,17 @@ public class IndexController {
     public String index(HttpServletRequest request){
 //        这里是为了获取访问的cookie值，来记住用户是否登录过。并且判断该用户是否存在与数据库中。
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie : cookies){
-            if(cookie.getName().equals("token")) {
-                String token = cookie.getValue();
-                User user = userMapper.findByToken(token);
-                if(user !=null){
+        if(cookies.length>=0){
+            for (Cookie cookie : cookies){
+                if(cookie.getName().equals("token")) {
+                    String token = cookie.getValue();
+                    User user = userMapper.findByToken(token);
+                    if(user !=null){
 //                    给浏览器设置访问值
-                    request.getSession().setAttribute("user",user);
+                        request.getSession().setAttribute("user",user);
+                    }
+                    break;
                 }
-                break;
             }
         }
         return "index";
