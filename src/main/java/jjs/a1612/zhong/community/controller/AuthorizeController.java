@@ -38,6 +38,7 @@ public class AuthorizeController {
                            @RequestParam(name="state")String state,
                            HttpServletRequest request,
                            HttpServletResponse response){
+//        这里是整个的登录的token 值
         AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
         accessTokenDTO.setClient_id(clientId);
         accessTokenDTO.setClient_secret(clientSecret);

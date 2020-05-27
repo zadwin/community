@@ -28,8 +28,20 @@
 [Postman](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)
 
 ## 脚本
-
-```bash
-mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+```sql
+CREATE TABLE USER
+(
+    ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    ACCOUNT_ID VARCHAR(100),
+    NAME VARCHAR(50),
+    TOKEN VARCHAR(36),
+    GMT_CREATE BIGINT,
+    GMT_MODIFIED BIGINT
+);
 ```
-
+```sql
+ALTER TABLE USER Add bio VARCHAR(256) NULL;
+```
+```bash
+mvn flyway:migrate
+```
